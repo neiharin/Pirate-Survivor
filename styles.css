@@ -1,0 +1,82 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #04315f 0%, #021527 65%);
+  color: #ebf4ff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.game-shell {
+  width: min(100vw, 1000px);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.hud > div {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 10px;
+  border: 1px solid rgba(150, 200, 255, 0.25);
+  border-radius: 8px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(180deg, #1f7dbf 0%, #115383 100%);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+.tips {
+  margin-top: 8px;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.panel {
+  max-width: 420px;
+  background: #07233f;
+  border: 1px solid #7db2e8;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background: #1f95ff;
+  color: #f5fbff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

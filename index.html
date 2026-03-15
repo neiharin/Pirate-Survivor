@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pirate Survivor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <div><strong>Vida:</strong> <span id="hp">100</span></div>
+        <div><strong>XP:</strong> <span id="xp">0</span></div>
+        <div><strong>Nivel:</strong> <span id="level">1</span></div>
+        <div><strong>Ola:</strong> <span id="wave">1</span></div>
+      </header>
+      <canvas id="game" width="960" height="540"></canvas>
+      <footer class="tips">
+        <p>
+          WASD / Flechas para navegar, clic o barra espaciadora para disparar. Sobrevive,
+          sube de nivel y derrota a los buques élite.
+        </p>
+      </footer>
+      <section id="overlay" class="overlay hidden">
+        <div class="panel">
+          <h1 id="overlay-title"></h1>
+          <p id="overlay-text"></p>
+          <button id="restart">Jugar de nuevo</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
